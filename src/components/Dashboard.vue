@@ -3,13 +3,9 @@ import Agentes from "./CRM/Ventas/Agentes.vue";
 </script>
 
 <template>
-  <div class="body-setup">
+  <div>
     <Agentes />
   </div>
 </template>
 
-<style scoped>
-.body-setup {
-  margin-top: 65px;
-}
-</style>
+<style scoped></style>

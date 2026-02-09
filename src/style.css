@@ -2,6 +2,9 @@
     font-size: .7rem!important;
     font-weight: bold!important;
 }
+.body-setup {
+    margin-top: 65px;
+}
 .col-form-label {
     font-size: 10px;
     margin-bottom: .2px;
