@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Dashboard from "@/components/Dashboard.vue";
-import Navigation from "./components/shared/navigation.vue";
+import Navigation from "@/components/shared/Navigation.vue";
 </script>
 
 <template>
