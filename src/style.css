@@ -1,0 +1,36 @@
+.layout-h6 {
+    font-size: .7rem!important;
+    font-weight: bold!important;
+}
+.col-form-label {
+    font-size: 10px;
+    margin-bottom: .2px;
+}
+
+.form-control {
+    font-size: 10px;
+    height: 25px!important;
+    border-radius: 0px!important;
+}
+
+.form-select-sm {
+    font-size: 10px;
+    height: 25px!important;
+    width: 77%!important;
+    margin-left: 12px!important;
+    border-radius: 0px !important;
+}
+
+.form-check-label {
+    font-size: 10px;
+}
+
+.select-custom {
+    width: 68%!important;
+    border-radius: 0px !important;
+}
+
+.select-custom-1 {
+    width: 60% !important;
+    border-radius: 0px !important;
+}
