@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import Dashboard from "@/components/Dashboard.vue";
 import Navigation from "@/components/shared/Navigation.vue";
 </script>
 
 <template>
-  <router-view />
   <Navigation />
-  <Dashboard />
+  <main class="body-setup">
+    <RouterView />
+  </main>
 </template>
 
 <style scoped>

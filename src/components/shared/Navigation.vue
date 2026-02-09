@@ -17,21 +17,38 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active text-light" aria-current="page" href="#"
-              >Inicio</a
+            <RouterLink
+              class="nav-link active text-light"
+              aria-current="page"
+              to="/"
+              >Inicio</RouterLink
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">Contactos</a>
+            <RouterLink class="nav-link text-light" to="/contactos"
+              >Contactos</RouterLink
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">Medicos/Hospitales</a>
+            <RouterLink class="nav-link text-light" to="/medicos"
+              >Medicos/Hospitales</RouterLink
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">Ventas</a>
+            <RouterLink class="nav-link text-light" to="/agentes"
+              >Ventas</RouterLink
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">Marketing Publicidad</a>
+            <RouterLink class="nav-link text-light" to="/marketing"
+              >Marketing Publicidad</RouterLink
+            >
+          </li>
+
+          <li class="nav-item">
+            <RouterLink class="nav-link text-light" to="/abogados"
+              >Abogados</RouterLink
+            >
           </li>
         </ul>
         <span class="navbar-text"> Settings </span>

@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="container-fluid mt-5">
+  <div class="container-fluid mt-5 body-setup">
     <form>
       <div class="row g-1">
         <!--Columna 1-->
@@ -43,56 +43,6 @@
                 >
                 <div class="col-sm-10">
                   <input type="email" class="form-control" id="inputEmail" />
-                </div>
-              </div>
-
-              <div class="row mb-1">
-                <label for="inputEmail" class="col-sm-2 col-form-label"
-                  >Idioma</label
-                >
-                <select
-                  name="idioma"
-                  class="form-select form-select-sm"
-                  aria-label="Default select example"
-                >
-                  <option selected>Selecciona un campo</option>
-                  <option value="1">Español</option>
-                  <option value="2">Ingles</option>
-                  <option value="3">Frances</option>
-                  <option value="4">Portugues</option>
-                </select>
-              </div>
-
-              <h6 class="layout-h6">Contacto de Emergencia:</h6>
-              <hr />
-
-              <div class="row mb-1">
-                <label
-                  for="inputNombreEmergencia"
-                  class="col-sm-4 col-form-label"
-                  >Nombre Emergencia</label
-                >
-                <div class="col-sm-8">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="inputNombreEmergencia"
-                  />
-                </div>
-              </div>
-
-              <div class="row mb-1">
-                <label
-                  for="inputTelefonoEmergencia"
-                  class="col-sm-5 col-form-label"
-                  >Telefono Emergencia</label
-                >
-                <div class="col-sm-7">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="inputTelefonoEmergencia"
-                  />
                 </div>
               </div>
 
@@ -184,22 +134,6 @@
                   <option value="2">Los Angeles County</option>
                   <option value="3">Orange County</option>
                 </select>
-              </div>
-
-              <h6 class="layout-h6">Intake:</h6>
-              <hr />
-
-              <div class="row mb-1">
-                <label for="inputEnviaAbogado" class="col-sm-5 col-form-label"
-                  >Fecha de envío a Abogado</label
-                >
-                <div class="col-sm-7">
-                  <input
-                    type="date"
-                    class="form-control"
-                    id="inputEnviaAbogado"
-                  />
-                </div>
               </div>
             </div>
           </div>
@@ -364,32 +298,6 @@
                 </div>
               </div>
 
-              <div class="row mb-1">
-                <label for="inputFechaConsulta" class="col-sm-4 col-form-label"
-                  >Fecha de Consulta</label
-                >
-                <div class="col-sm-8">
-                  <input
-                    type="date"
-                    class="form-control"
-                    id="inputFechaConsulta"
-                  />
-                </div>
-              </div>
-
-              <div class="row mb-1">
-                <label for="inputFechaRechazo" class="col-sm-4 col-form-label"
-                  >Fecha de Rechazo</label
-                >
-                <div class="col-sm-8">
-                  <input
-                    type="date"
-                    class="form-control"
-                    id="inputFechaRechazo"
-                  />
-                </div>
-              </div>
-
               <h6 class="layout-h6">Firmas</h6>
               <hr />
 
@@ -520,83 +428,22 @@
                 </div>
               </div>
 
-              <h6 class="layout-h6">Citas</h6>
-              <hr />
               <div class="row mb-1">
                 <label
-                  for="inputStatusPrimerCitaMedica"
+                  for="inputPostTerminacion"
                   class="col-sm-4 col-form-label"
-                  >Primer Cita Medica</label
+                  >Post Terminación</label
                 >
                 <select
-                  name="inputStatusPrimerCitaMedica"
+                  name="inputPostTerminacion"
                   class="form-select form-select-sm select-custom-1"
                   aria-label="Default select example"
-                  id="inputStatusPrimerCitaMedica"
+                  id="inputPostTerminacion"
                 >
                   <option selected>Selecciona un campo</option>
-                  <option value="1">Agendada</option>
-                  <option value="2">No Agendada</option>
+                  <option value="1">Sí</option>
+                  <option value="2">No</option>
                 </select>
-              </div>
-
-              <div class="row mb-1">
-                <label
-                  for="inputFechaPrimerCitaMedica"
-                  class="col-sm-4 col-form-label"
-                  >Fecha de Primer Cita Medica
-                </label>
-                <div class="col-sm-8">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="inputFechaPrimerCitaMedica"
-                  />
-                </div>
-              </div>
-              <div class="row mb-1">
-                <label
-                  for="inputFechaSegundaCitaMedica"
-                  class="col-sm-4 col-form-label"
-                  >Segunda Cita Medica</label
-                >
-                <select
-                  name="inputStatusSegundaCitaMedica"
-                  class="form-select form-select-sm select-custom-1"
-                  aria-label="Default select example"
-                  id="inputFechaSegundaCitaMedica"
-                >
-                  <option selected>Selecciona un campo</option>
-                  <option value="1">Agendada</option>
-                  <option value="2">No Agendada</option>
-                </select>
-              </div>
-
-              <div class="row mb-1">
-                <label
-                  for="inputFechaSegundaCitaMedica"
-                  class="col-sm-4 col-form-label"
-                  >Fecha de Segunda Cita Medica
-                </label>
-                <div class="col-sm-8">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="inputFechaSegundaCitaMedica"
-                  />
-                </div>
-              </div>
-              <div class="row mb-1">
-                <label for="inputNombreClinica" class="col-sm-4 col-form-label"
-                  >Locacion de la Clinica/Hospital
-                </label>
-                <div class="col-sm-8">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="inputNombreClinica"
-                  />
-                </div>
               </div>
             </div>
           </div>
@@ -605,260 +452,273 @@
         <div class="col-md-3">
           <div class="card">
             <div class="card-body">
-              <h6 class="layout-h6">Medico:</h6>
+              <h6 class="layout-h6">Publicidad</h6>
               <hr />
               <div class="row mb-1">
-                <label for="inputNombreMedico" class="col-sm-4 col-form-label"
-                  >Cita Medica por
+                <label
+                  for="inputStatusPublicidad"
+                  class="col-sm-4 col-form-label"
+                  >Status de publicidad del caso</label
+                >
+                <select
+                  name="inputStatusPublicidad"
+                  class="form-select form-select-sm select-custom-1"
+                  aria-label="Default select example"
+                  id="inputStatusPublicidad"
+                >
+                  <option selected>Selecciona un campo</option>
+                  <option value="1">Campaña 1</option>
+                  <option value="2">Campaña 2</option>
+                  <option value="3">Campaña 3</option>
+                </select>
+              </div>
+
+              <div class="row mb-1">
+                <label
+                  for="inputReferenciaPublicidad"
+                  class="col-sm-4 col-form-label"
+                  >Referencia de publicidad
                 </label>
                 <div class="col-sm-8">
                   <input
                     type="text"
                     class="form-control"
-                    id="inputNombreMedico"
+                    id="inputReferenciaPublicidad"
                   />
                 </div>
               </div>
+
               <div class="row mb-1">
-                <label
-                  for="inputConfirmacionCitaMedica"
-                  class="col-sm-4 col-form-label"
-                  >Cita Confirmada por</label
-                >
-                <select
-                  name="inputConfirmacionCitaMedica"
-                  class="form-select form-select-sm select-custom-1"
-                  aria-label="Default select example"
-                  id="inputConfirmacionCitaMedica"
-                >
-                  <option selected>Selecciona un campo</option>
-                  <option value="1">Jose Nicasio</option>
-                  <option value="2">Maria Garcia</option>
-                  <option value="3">Carlos Rodriguez</option>
-                </select>
-              </div>
-              <div class="row mb-1">
-                <label
-                  for="inputConfirmacionClinica"
-                  class="col-sm-4 col-form-label"
-                  >Confirmacion de Clinica</label
-                >
-                <select
-                  name="inputConfirmacionClinica"
-                  class="form-select form-select-sm select-custom-1"
-                  aria-label="Default select example"
-                  id="inputConfirmacionClinica"
-                >
-                  <option selected>Selecciona un campo</option>
-                  <option value="1">Si</option>
-                  <option value="2">No</option>
-                </select>
-              </div>
-              <div class="row mb-1">
-                <label
-                  for="inputFechaSegundaCitaMedica"
-                  class="col-sm-4 col-form-label"
-                  >Segunda Cita Medica</label
-                >
-                <select
-                  name="inputStatusSegundaCitaMedica"
-                  class="form-select form-select-sm select-custom-1"
-                  aria-label="Default select example"
-                  id="inputFechaSegundaCitaMedica"
-                >
-                  <option selected>Selecciona un campo</option>
-                  <option value="1">Agendada</option>
-                  <option value="2">No Agendada</option>
-                </select>
-              </div>
-              <div class="row mb-1">
-                <label
-                  for="inputFechaConfirmacionCitaMedica"
-                  class="col-sm-4 col-form-label"
-                  >Fecha de Confirmación de Cita Medica
+                <label for="inputPublicidad" class="col-sm-4 col-form-label"
+                  >Publicidad
                 </label>
                 <div class="col-sm-8">
                   <input
-                    type="date"
+                    type="text"
                     class="form-control"
-                    id="inputFechaConfirmacionCitaMedica"
+                    id="inputPublicidad"
                   />
                 </div>
               </div>
 
-              <h6 class="layout-h6">Tipo de Azeguranza</h6>
-              <hr />
-
               <div class="row mb-1">
-                <label
-                  for="inputNombreAzeguranza"
-                  class="col-sm-4 col-form-label"
-                  >Nombre Azeguranza</label
-                >
-                <select
-                  name="inputNombreAzeguranza"
-                  class="form-select form-select-sm select-custom-1"
-                  aria-label="Default select example"
-                  id="inputNombreAzeguranza"
-                >
-                  <option selected>Selecciona un campo</option>
-                  <option value="ACE">American Insurance Company</option>
-                </select>
+                <label for="inputNombrReferido" class="col-sm-4 col-form-label"
+                  >Nombre Referido
+                </label>
+                <div class="col-sm-8">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputNombrReferido"
+                  />
+                </div>
               </div>
               <div class="row mb-1">
-                <div class="col">
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="checkPiernas"
-                    />
-                    <label class="form-check-label" for="checkPiernas">
-                      Piernas
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="checkCabeza"
-                    />
-                    <label class="form-check-label" for="checkCabeza">
-                      Cabeza
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="checkCuello"
-                    />
-                    <label class="form-check-label" for="checkCuello">
-                      Cuello
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="checkBrazos"
-                    />
-                    <label class="form-check-label" for="checkBrazos">
-                      Brazos
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="checkDedos"
-                    />
-                    <label class="form-check-label" for="checkDedos">
-                      Dedos
-                    </label>
-                  </div>
+                <label for="inputNumeroReferido" class="col-sm-4 col-form-label"
+                  >Numero Referido
+                </label>
+                <div class="col-sm-8">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="inputNumeroReferido"
+                  />
                 </div>
-                <div class="col">
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="checkEspalda"
-                    />
-                    <label class="form-check-label" for="checkEspalda">
-                      Espalda
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="checkHombros"
-                    />
-                    <label class="form-check-label" for="checkHombros">
-                      Hombros
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="checkManos"
-                    />
-                    <label class="form-check-label" for="checkManos">
-                      Manos
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="checkCintura"
-                    />
-                    <label class="form-check-label" for="checkCintura">
-                      Cintura
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="checkPies"
-                    />
-                    <label class="form-check-label" for="checkPies">
-                      Pies
-                    </label>
-                  </div>
+              </div>
+              <div class="row mb-1">
+                <label
+                  for="inputCuentasPublicidad"
+                  class="col-sm-4 col-form-label"
+                  >Cuentas Publicidad
+                </label>
+                <div class="col-sm-8">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputCuentasPublicidad"
+                  />
                 </div>
-                <div class="col">
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="checkNuca"
-                    />
-                    <label class="form-check-label" for="checkNuca">
-                      Nuca
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="checkCadera"
-                    />
-                    <label class="form-check-label" for="checkCadera">
-                      Cadera
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="checkRodillas"
-                    />
-                    <label class="form-check-label" for="checkRodillas">
-                      Rodillas
-                    </label>
-                  </div>
+              </div>
+              <div class="row mb-1">
+                <label
+                  for="inputMenorEdadPublicidad"
+                  class="col-sm-4 col-form-label"
+                  >Menor de Edad Publicidad
+                </label>
+                <div class="col-sm-8">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputMenorEdadPublicidad"
+                  />
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <hr />
+        <h6 class="layout-h6">Intentos:</h6>
+      </div>
+      <div class="row g-1">
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="layout-h6">Intento 1:</h6>
+              <hr />
+
+              <div class="row mb-1">
+                <label for="inputPrimerIntento" class="col-sm-5 col-form-label"
+                  >Primer Intento</label
+                >
+                <div class="col-sm-7">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputPrimerIntento"
+                  />
+                </div>
+              </div>
+              <div class="row mb-1">
+                <label
+                  for="inputFechaPrimerIntento"
+                  class="col-sm-5 col-form-label"
+                  >Fecha Primer Intento</label
+                >
+                <div class="col-sm-7">
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="inputFechaPrimerIntento"
+                  />
+                </div>
+              </div>
+              <div class="row mb-1">
+                <label
+                  for="inputAgentePrimerIntento"
+                  class="col-sm-2 col-form-label"
+                  >Agente Primer Intento</label
+                >
+                <select
+                  name="agentePrimerIntento"
+                  class="form-select form-select-sm"
+                  aria-label="Default select example"
+                  id="inputAgentePrimerIntento"
+                >
+                  <option selected>Selecciona un campo</option>
+                  <option value="1">Juan Pérez</option>
+                  <option value="2">María Gómez</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="layout-h6">Intento 2:</h6>
+              <hr />
+
+              <div class="row mb-1">
+                <label for="inputSegundoIntento" class="col-sm-5 col-form-label"
+                  >Segundo Intento</label
+                >
+                <div class="col-sm-7">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputSegundoIntento"
+                  />
+                </div>
+              </div>
+              <div class="row mb-1">
+                <label
+                  for="inputFechaSegundoIntento"
+                  class="col-sm-5 col-form-label"
+                  >Fecha Segundo Intento</label
+                >
+                <div class="col-sm-7">
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="inputFechaSegundoIntento"
+                  />
+                </div>
+              </div>
+              <div class="row mb-1">
+                <label
+                  for="inputAgenteSegundoIntento"
+                  class="col-sm-2 col-form-label"
+                  >Agente Segundo Intento</label
+                >
+                <select
+                  name="agenteSegundoIntento"
+                  class="form-select form-select-sm"
+                  aria-label="Default select example"
+                  id="inputAgenteSegundoIntento"
+                >
+                  <option selected>Selecciona un campo</option>
+                  <option value="1">Juan Pérez</option>
+                  <option value="2">María Gómez</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="layout-h6">Intento 3:</h6>
+              <hr />
+
+              <div class="row mb-1">
+                <label for="inputTercerIntento" class="col-sm-5 col-form-label"
+                  >Tercer Intento</label
+                >
+                <div class="col-sm-7">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputTercerIntento"
+                  />
+                </div>
+              </div>
+              <div class="row mb-1">
+                <label
+                  for="inputFechaTercerIntento"
+                  class="col-sm-5 col-form-label"
+                  >Fecha Tercer Intento</label
+                >
+                <div class="col-sm-7">
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="inputFechaTercerIntento"
+                  />
+                </div>
+              </div>
+              <div class="row mb-1">
+                <label
+                  for="inputAgenteTercerIntento"
+                  class="col-sm-2 col-form-label"
+                  >Agente Tercer Intento</label
+                >
+                <select
+                  name="agenteTercerIntento"
+                  class="form-select form-select-sm"
+                  aria-label="Default select example"
+                  id="inputAgenteTercerIntento"
+                >
+                  <option selected>Selecciona un campo</option>
+                  <option value="1">Juan Pérez</option>
+                  <option value="2">María Gómez</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3"></div>
       </div>
       <div class="row mt-4">
         <div class="col-12">
