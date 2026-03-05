@@ -1,6 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useRoute } from "vue-router";
+
+const route = useRoute();
+</script>
 <template>
-  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-dark">
+  <nav
+    v-if="route.path !== '/'"
+    class="navbar navbar-expand-lg fixed-top navbar-light bg-dark"
+  >
     <div class="container-fluid">
       <a class="navbar-brand text-light" href="#">Metacenter - CRM</a>
       <button
@@ -51,7 +58,11 @@
             >
           </li>
         </ul>
-        <span class="navbar-text"> Settings </span>
+        <span class="navbar-text text-light">
+          <RouterLink class="nav-link text-light" to="/logout">
+            Settings
+          </RouterLink>
+        </span>
       </div>
     </div>
   </nav>

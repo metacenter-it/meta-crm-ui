@@ -6,10 +6,13 @@ import Medicos from '@/components/CRM/Medicos/Medicos.vue'
 import Contactos from '@/components/CRM/Contactos/Contactos.vue'
 import Abogados from '@/components/CRM/Abogados/Abogados.vue'
 import Marketing from '@/components/CRM/Marketing/Marketing.vue'
+import Login from '@/components/Login/Login.vue'
   
 
 const routes = [
-  { path: '/', component: DashboardView },
+  { path: '/home', component: DashboardView },
+  { path: '/', component: Login },
+  { path: '/logout', component: Login },
   { path: '/agentes', component: Ventas },
   { path: '/medicos', component: Medicos },
   { path: '/contactos', component: Contactos },
